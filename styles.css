@@ -1,1 +1,109 @@
-/* this file is for your custom CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
+body { font-family: 'Bitter', serif; }
+
+.content-wrapper {
+  width: 960px;
+  height: auto;
+  
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+  
+  margin: 30px;
+  
+  font-size: 50px;
+  color: #000066;
+}
+
+.game-board {
+  height: 600px;
+  width: 600px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  border: 10px solid #000066;
+}
+
+.square {
+  width: 194px;
+  height: 194px;
+}
+
+.square,
+.game-piece {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-left,
+.middle-left,
+.bottom-left,
+.top-center,
+.middle-center,
+.bottom-center {
+  border-right: 3px solid #000066;
+}
+
+.top-left,
+.top-center,
+.top-right,
+.middle-left,
+.middle-center,
+.middle-right {
+  border-bottom: 3px solid #000066;
+}
+
+.game-piece {
+  width: 170px;
+  height: 150px;
+  padding-bottom: 20px;  
+  
+  font-size: 125px;
+  
+  background-color: grey;
+}
+
+.o {
+  color: #006600;
+}
+
+.x {
+  color: #660000;
+}
+
+.control-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin-top: 30px;
+}
+
+.message-window {
+  height: 100px;
+  width: 280px;
+  
+  border: 1px solid #000066;
+  background-color: lightgrey;
+}
+
+.new-game {
+  margin: 20px;
+  margin-left: 90px;
+  
+  height: 50px;
+  width: 200px;
+  
+  font-size: 22px;
+  font-family: 'Bitter', serif;
+  color: #000066;
+}

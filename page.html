@@ -8,8 +8,25 @@
   
   <script src="script.js" defer></script>
   
-  <title>My Front-End Project</title>
+  <title>Tic-Tac-Toe</title>
 </head>
 <body>
-  <!-- Throw your HTML in here! -->
+  <div class="content-wrapper">
+    <h1 class="title">Tic-Tac-Toe</h1>
+    <div class="game-board">
+      <span class="square top-left"><div class="game-piece x">X</div></span>
+      <span class="square top-center"></span>
+      <span class="square top-right"></span>
+      <span class="square middle-left"><div class="game-piece x">X</div></span>
+      <span class="square middle-center"><div class="game-piece o">O</div></span>
+      <span class="square middle-right"></span>
+      <span class="square bottom-left"></span>
+      <span class="square bottom-center"></span>
+      <span class="square bottom-right"><div class="game-piece o">O</div></span>
+    </div>
+    <div class="control-center">
+      <div class="message-window">Welcome to Tic-Tac-Toe!</div>
+      <input type="button" class="new-game" value="New Game">
+    </div>
+  </div>
 </body>
