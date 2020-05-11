@@ -13,20 +13,29 @@
 <body>
   <div class="content-wrapper">
     <h1 class="title">Tic-Tac-Toe</h1>
+    <div class="player-names">
+      <h3 id="player-one"></h3>
+      Vs.
+      <h3 id="player-two"></h3>
+    </div>
     <div class="game-board">
-      <span class="square top-left"><div class="game-piece x">X</div></span>
+      <span class="square top-left"></span>
       <span class="square top-center"></span>
       <span class="square top-right"></span>
-      <span class="square middle-left"><div class="game-piece x">X</div></span>
-      <span class="square middle-center"><div class="game-piece o">O</div></span>
+      <span class="square middle-left"></span>
+      <span class="square middle-center"></span>
       <span class="square middle-right"></span>
       <span class="square bottom-left"></span>
       <span class="square bottom-center"></span>
-      <span class="square bottom-right"><div class="game-piece o">O</div></span>
+      <span class="square bottom-right"></span>
     </div>
     <div class="control-center">
-      <div class="message-window">Welcome to Tic-Tac-Toe!</div>
-      <input type="button" class="new-game" value="New Game">
+      <div id="message-window"></div>
+      <div class="form-wrapper">
+        <input type="text" class="input-name" id="p1-field" placeholder="Enter a name for Player 1...">
+        <input type="text" class="input-name" id="p2-field" placeholder="Enter a name for Player 2...">
+        <input type="button" class="new-game" value="New Game" onclick='playGame();'>
+      </div>
     </div>
   </div>
 </body>

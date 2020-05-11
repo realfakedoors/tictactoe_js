@@ -12,14 +12,30 @@ body { font-family: 'Bitter', serif; }
   align-items: center;
 }
 
+.title,
+.player-names {
+  color: #000066;
+}
+
 .title {
   display: inline-block;
   
   margin: 30px;
   
-  font-size: 50px;
-  color: #000066;
+  font-size: 80px;
 }
+
+.player-names {
+  width: 550px;
+  
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 36px;
+}
+
+
 
 .game-board {
   height: 600px;
@@ -72,28 +88,57 @@ body { font-family: 'Bitter', serif; }
   background-color: grey;
 }
 
-.o {
-  color: #006600;
+.X,
+#player-one {
+  color: #660000;
 }
 
-.x {
-  color: #660000;
+.O,
+#player-two {
+  color: #006600;
 }
 
 .control-center {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   
   margin-top: 30px;
 }
 
-.message-window {
-  height: 100px;
+#message-window {
+  height: 120px;
   width: 280px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   border: 1px solid #000066;
   background-color: lightgrey;
+  
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-name {
+  width: 200px;
+  height: 28px;
+  
+  margin-left: 70px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  
+  font-size: 15px;
+  text-align: center;
 }
 
 .new-game {
