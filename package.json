@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe_js",
+  "version": "1.0.0",
+  "description": "A browser-based tic-tac-toe game.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realfakedoors/tictactoe_js.git"
+  },
+  "author": "Andy Holt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realfakedoors/tictactoe_js/issues"
+  },
+  "homepage": "https://github.com/realfakedoors/tictactoe_js#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
